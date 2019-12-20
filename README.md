@@ -53,12 +53,12 @@ The path to the PL/SQL Cop command line utility and the license file must be val
 
 It’s important to note, that each version of PL/SQL Cop for SonarQube requires specific versions of SonarQube. Updates are considered only for SonarQube LTS (long term support) versions.
 
-| Version | Supported SonarQube Versions | 
-| :-----: | :--------------------------: |
-| [4.5.0.1]() | 4.5 LTS - 5.1.2 |
-| [5.6.0.2]() | 5.6 LTS - 6.6 |
-| [6.7.0.4]() | 6.7 LTS - 7.6 |
-| [7.9.0.1]() | 7.9 LTS - 8.0 |
+| Plugin Version | Supported SonarQube Version | Required CLI Version |
+| :------------: | :-------------------------: | :------------------: |
+| [4.5.0.1](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v4.5.0.1) | 4.5 LTS - 5.1.2 | 2.3.0 |
+| [5.6.0.2](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v5.6.0.2) | 5.6 LTS - 6.6 | 2.3.0 |
+| [6.7.0.4](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v6.7.0.4) | 6.7 LTS - 7.6 | 2.3.0 |
+| [7.9.0.1](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v7.9.0.1) | 7.9 LTS - 8.0 | 2.3.0 |
 
 You find all releases and release information [here](https://github.com/Trivadis/plsql-cop-cli/releases).
 
