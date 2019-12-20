@@ -60,7 +60,7 @@ It’s important to note, that each version of PL/SQL Cop for SonarQube requires
 | [6.7.0.4](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v6.7.0.4) | 6.7 LTS - 7.6 | 2.3.0 |
 | [7.9.0.1](https://github.com/Trivadis/plsql-cop-sonar/releases/tag/v7.9.0.1) | 7.9 LTS - 8.0 | 2.3.0 |
 
-You find all releases and release information [here](https://github.com/Trivadis/plsql-cop-cli/releases).
+You find all releases and release information [here](https://github.com/Trivadis/plsql-cop-sonar/releases).
 
 ## Issues
 Please file your bug reports, enhancement requests, questions and other support requests within [Github's issue tracker](https://help.github.com/articles/about-issues/).
