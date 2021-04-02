@@ -84,7 +84,7 @@ When clicking on `Why is this an issue?` the complete rule is shown in simlar wa
 
 ![SonarQube Guideline Details](images/sonar_4.png)
 
-There are a lot more analysis available in [SonarQube](https://docs.sonarqube.org/latest/).
+See [SonarQube documentation](https://docs.sonarqube.org/latest/) for more information.
 
 ## Installation
 
