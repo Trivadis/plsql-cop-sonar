@@ -1,12 +1,12 @@
-# PL/SQL Cop for SonarQube
+# db* CODECOP for SonarQube
 
 ## Introduction
 
-PL/SQL Cop for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 3.6](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/). Behind the scenes the plugin calls the [PL/SQL Cop command line](https://github.com/Trivadis/plsql-cop-cli) utility for the static code analysis.
+db* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 3.6](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/). Behind the scenes the plugin calls the [db* CODECOP command line](https://github.com/Trivadis/plsql-cop-cli) utility for the static code analysis.
 
 A static code analysis is typically initiated as part of an continuous integration setup, e.g. at the end of a Jenkins or Hudson build job. SonarQube stores the result of the analysis in a relational database. Supported are HSQLDB, PostgreSQL, MySQL, Microsoft SQL Server and Oracle Database, of course.
 
-Since every analysis is stored as a snapshot in the SonarQube repository the improvement or the decrease of the code quality may be monitored very well. Use SonarQube and the PL/SQL Cop plugin if you care about your PL/SQL code quality.
+Since every analysis is stored as a snapshot in the SonarQube repository the improvement or the decrease of the code quality may be monitored very well. Use SonarQube and the db* CODECOP plugin if you care about your PL/SQL code quality.
 
 ## Examples
 
@@ -37,21 +37,21 @@ Click on the three dots after the issue text to get more information about the v
 
 ![SonarQube Guideline Details](images/sonar_4.png)
 
-There are a lot more analysis available in [SonarQube](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin). Get your copy of [PL/SQL Cop](https://github.com/Trivadis/plsql-cop-cli/releases) and [PL/SQL Cop for SonarQube](https://github.com/Trivadis/plsql-cop-sonar/releases) now.
+There are a lot more analysis available in [SonarQube](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin). Get your copy of [db* CODECOP](https://github.com/Trivadis/plsql-cop-cli/releases) and [db* CODECOP for SonarQube](https://github.com/Trivadis/plsql-cop-sonar/releases) now.
 
 ## Installation
 
-Copy the downloaded sonar-plsql-cop-plugin-x.x.x.x.jar file into the extensions/plugins folder of your SonarQube installation and restart the [SonarQube](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin) server. Login as admin, click on “Settings” in the main menu bar and configure the “Trivadis PL/SQL Cop” section as shown below
+Copy the downloaded sonar-plsql-cop-plugin-x.x.x.x.jar file into the extensions/plugins folder of your SonarQube installation and restart the [SonarQube](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin) server. Login as admin, click on “Settings” in the main menu bar and configure the “Trivadis db* CODECOP” section as shown below
 
-![PL/SQL Cop configuration in SonarQube](images/sonar_5.png)
+![db* CODECOP configuration in SonarQube](images/sonar_5.png)
 
-Press “Save Trivadis PL/SQL Cop Settings” to the configuration.
+Press “Save Trivadis db* CODECOP Settings” to the configuration.
 
-The path to the PL/SQL Cop command line utility and the license file must be valid for the machine doing the analysis with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). If you are using Jenkins then PL/SQL Cop command line utility must be installed on every Jenkins node.
+The path to the db* CODECOP command line utility and the license file must be valid for the machine doing the analysis with [SonarQube Scanner](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner). If you are using Jenkins then db* CODECOP command line utility must be installed on every Jenkins node.
 
 ## Releases
 
-It’s important to note, that each version of PL/SQL Cop for SonarQube requires specific versions of SonarQube. Updates are considered only for SonarQube LTS (long term support) versions.
+It’s important to note, that each version of db* CODECOP for SonarQube requires specific versions of SonarQube. Updates are considered only for SonarQube LTS (long term support) versions.
 
 | Plugin Version | Supported SonarQube Version | Required CLI Version |
 | :------------: | :-------------------------: | :------------------: |
@@ -76,11 +76,11 @@ see [Frequently Asked Questions](FAQ.md).
 
 ## Further Information
 
-Please find further information about PL/SQL Cop on the [Trivadis](https://www.trivadis.com/en/plsql-cop) website.
+Please find further information about db* CODECOP on the [Trivadis](https://www.trivadis.com/en/plsql-cop) website.
 
 ## License
 
-The preview/trial version of PL/SQL Cop for SonarQube is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. You may obtain a copy of the License at https://creativecommons.org/licenses/by-nc-nd/3.0/.
+The preview/trial version of db* CODECOP for SonarQube is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. You may obtain a copy of the License at https://creativecommons.org/licenses/by-nc-nd/3.0/.
 
 ![CC-BY_NC-ND](images/CC-BY-NC-ND.png)
 
