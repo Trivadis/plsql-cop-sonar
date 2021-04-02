@@ -2,7 +2,7 @@
 
 ## Introduction
 
-db* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 3.6](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v3.6/). Behind the scenes the plugin calls the [db* CODECOP command line](https://github.com/Trivadis/plsql-cop-cli) utility for the static code analysis.
+db* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/). Behind the scenes the plugin calls the [db* CODECOP command line](https://github.com/Trivadis/plsql-cop-cli) utility for the static code analysis.
 
 A static code analysis is typically initiated as part of an continuous integration setup, e.g. at the end of a Jenkins or Hudson build job. SonarQube stores the result of the analysis in a relational database. Supported are HSQLDB, PostgreSQL, MySQL, Microsoft SQL Server and Oracle Database, of course.
 
