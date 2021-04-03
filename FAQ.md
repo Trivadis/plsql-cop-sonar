@@ -10,7 +10,7 @@ See the [release information](https://github.com/Trivadis/plsql-cop-sonar/releas
 
 ## What are the licensing terms?
 
-The preview/trial version of PL/SQL Cop for SonarQube is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. You may obtain a copy of the License at https://creativecommons.org/licenses/by-nc-nd/3.0/.
+The preview/trial version of db* CODECOP for SonarQube is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. You may obtain a copy of the License at https://creativecommons.org/licenses/by-nc-nd/3.0/.
 
 ![CC-BY_NC-ND](images/CC-BY-NC-ND.png)
 
