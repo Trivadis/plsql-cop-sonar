@@ -119,7 +119,7 @@ The `File suffix filter` associates file extensions to the db\* CODECOP plugin.
 
 Paste the content of the `.lic` file you've got from your Trivadis representative into the `license file` field.
 
-The `Validator Config class` defines the validator with its rule and profile definition for SonarQube. By default, the following classes are available:
+The `Validator Config class` defines defines the validator with its rules and quality profile for SonarQube. By default, the following classes are available:
 
 Validator Config class | Description
 --- | ---
