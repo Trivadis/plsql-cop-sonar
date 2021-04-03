@@ -2,7 +2,7 @@
 
 ## Introduction
 
-db\* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/). Behind the scenes the plugin calls the [db\* CODECOP command line](https://github.com/Trivadis/plsql-cop-cli) utility for the static code analysis.
+db\* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/).
 
 A static code analysis is typically initiated as part of an continuous integration setup, e.g. at the end of a Jenkins or Hudson build job. SonarQube stores the result of the analysis in a relational database. Supported are PostgreSQL, Microsoft SQL Server and Oracle Database. For evaluation purposes, the embedded H2 database can also be used.
 
@@ -62,13 +62,13 @@ At the end of the run an URL to the scanner result is provided.
 
 ### Run Code Analyis with CI Environments
 
-You can call the SonarScanner also from Grade, .NET projects, Maven, Ant, Jenkins, etc. The mechanisms are the same as with the command line tool. In the end the analyis report is uploaded to SonarQube.
+You can call the SonarScanner also from Gradle, .NET projects, Maven, Ant, Jenkins, etc. Whichever method you use, in the end the analysis report will be uploaded to SonarQube.
 
 See [SonarScanner](https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/) for more information.
 
 ### View Code Analysis Result in SonarQube
 
-SonarQube gathers the code analysis reports per project. Here are the results of the previous analysis.
+Here are the results of the previous analysis.
 
 ![SonarQube Dashboard](images/sonar_1.png)
 
@@ -76,7 +76,7 @@ Under `Issues` the following `Blocker` are shown:
 
 ![SonarQube Issues](images/sonar_2.png)
 
-By clicking on the redish box you can drill down to the source code.
+By clicking on the reddish box you can drill down to the source code.
 
 ![SonarQube Issues in Source](images/sonar_3.png)
 
@@ -123,8 +123,8 @@ The `Validator Config class` defines the validator with its rule and profile def
 
 Validator Config class | Description
 --- | ---
-com.trivadis.sonar.plugin.TrivadisGuidelines3ValidatorConfig | Rules based on Trivadis PL/SQL & SQL Codeing Guidelines 4.0. This is the default.
-com.trivadis.sonar.plugin.TrivadisGuidelines2ValidatorConfig | Rules based Trivadis PL/SQL & SQL Codeing Guidelines 4.0, but only those that were available in v2.0 using two digits per rule.
+com.trivadis.sonar.plugin.TrivadisGuidelines3ValidatorConfig | Rules based on [Trivadis PL/SQL & SQL Coding Guidelines 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/). This is the default.
+com.trivadis.sonar.plugin.TrivadisGuidelines2ValidatorConfig | Rules based [Trivadis PL/SQL & SQL Coding Guidelines 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/), but only those that were available in [v2.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/9-appendix/appendix/#b-mapping-new-guidelines-to-prior-versions) using two digits per rule.
 com.trivadis.sonar.plugin.EmptyPLSQLValidatorConfig | Minimal rule set (G-0000, E-000x), e.g. to calculate metrics only.
 
 You can create and configure custom validator config classes. See [this GitHub project](https://github.com/Trivadis/plsql-cop-validators) for more information. 
@@ -135,7 +135,7 @@ Download the `sonar-plsql-cop-secondary-x.x.x.jar` from [releases](https://githu
 
 ![db\* CODECOP secondary plugin configuration in SonarQube](images/sonar_secondary_config.png)
 
-The `Language Key` identifies the primary plugin which manages the file associations and is responsible for some common code analysis tasks. Enter `plsql` for SonarPLSQL or `plsqlopen` for ZPA.
+The `Language Key` identifies the primary plugin which manages the file associations and is responsible for some common code analysis tasks. Enter `plsql` for [SonarPLSQL](https://docs.sonarqube.org/latest/analysis/languages/plsql/) or `plsqlopen` for [ZPA](https://felipezorzo.com.br/zpa/).
 
 The meaning of `License file` and `Validator Config class` is identical to the standalone plugin. 
 
@@ -160,7 +160,7 @@ see [Frequently Asked Questions](FAQ.md).
 
 ## Further Information
 
-Please find further information about db\* CODECOP on the [Trivadis](https://www.trivadis.com/en/plsql-cop) website.
+Please find further information about db\* CODECOP on the [Trivadis](https://www.trivadis.com/en/dbstar) website.
 
 ## License
 
