@@ -2,7 +2,7 @@
 
 ## Introduction
 
-db\* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/).
+db\* CODECOP for SonarQube is a plugin for [SonarQube](http://www.sonarqube.org/). The plugin analyses SQL and PL/SQL code and calculates various metrics and checks the code for compliance of the [Trivadis PL/SQL & SQL Coding Guidelines Version 4.2](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/).
 
 A static code analysis is typically initiated as part of an continuous integration setup, e.g. at the end of a Jenkins or Hudson build job. SonarQube stores the result of the analysis in a relational database. Supported are PostgreSQL, Microsoft SQL Server and Oracle Database. For evaluation purposes, the embedded H2 database can also be used.
 
@@ -80,7 +80,7 @@ By clicking on the reddish box you can drill down to the source code.
 
 ![SonarQube Issues in Source](images/sonar_3.png)
 
-When clicking on `Why is this an issue?` the complete rule is shown in simlar way as in the [Trivadis PL/SQL & SQL Coding Guidelines v4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/4-language-usage/5-exception-handling/g-5030/).
+When clicking on `Why is this an issue?` the complete rule is shown in simlar way as in the [Trivadis PL/SQL & SQL Coding Guidelines v4.2](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/4-language-usage/5-exception-handling/g-5030/).
 
 ![SonarQube Guideline Details](images/sonar_4.png)
 
@@ -123,8 +123,8 @@ The `Validator Config class` defines defines the validator with its rules and qu
 
 Validator Config class | Description
 --- | ---
-com.trivadis.sonar.plugin.TrivadisGuidelines3ValidatorConfig | Rules based on [Trivadis PL/SQL & SQL Coding Guidelines 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/). This is the default.
-com.trivadis.sonar.plugin.TrivadisGuidelines2ValidatorConfig | Rules based [Trivadis PL/SQL & SQL Coding Guidelines 4.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/), but only those that were available in [v2.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.0/9-appendix/appendix/#b-mapping-new-guidelines-to-prior-versions) using two digits per rule.
+com.trivadis.sonar.plugin.TrivadisGuidelines3ValidatorConfig | Rules based on [Trivadis PL/SQL & SQL Coding Guidelines 4.2](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/). This is the default.
+com.trivadis.sonar.plugin.TrivadisGuidelines2ValidatorConfig | Rules based [Trivadis PL/SQL & SQL Coding Guidelines 4.2](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/), but only those that were available in [v2.0](https://trivadis.github.io/plsql-and-sql-coding-guidelines/v4.2/9-appendix/appendix/#b-mapping-new-guidelines-to-prior-versions) using two digits per rule.
 com.trivadis.sonar.plugin.EmptyPLSQLValidatorConfig | Minimal rule set (G-0000, E-000x), e.g. to calculate metrics only.
 
 You can create and configure custom validator config classes. See [this GitHub project](https://github.com/Trivadis/plsql-cop-validators) for more information. 
