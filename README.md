@@ -146,14 +146,6 @@ The current plugins are compatible with all on-premises SonarQube editions (Comm
 - Minumum SonarQube version: 7.9
 - Latest SonarQube version tested: 9.2.1
 
-## Issues
-Please file your bug reports, enhancement requests, questions and other support requests within [Github's issue tracker](https://help.github.com/articles/about-issues/).
-
-* [Questions](https://github.com/trivadis/plsql-cop-sonar/issues?q=is%3Aissue+label%3Aquestion)
-* [Open enhancements](https://github.com/trivadis/plsql-cop-sonar/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)
-* [Open bugs](https://github.com/trivadis/plsql-cop-sonar/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
-* [Submit new issue](https://github.com/trivadis/plsql-cop-sonar/issues/new)
-
 ## Frequently Asked Questions
 
 see [Frequently Asked Questions](FAQ.md).
