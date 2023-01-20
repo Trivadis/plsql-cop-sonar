@@ -139,6 +139,10 @@ The `Language Key` identifies the primary plugin which manages the file associat
 
 The meaning of `License file` and `Validator Config class` is identical to the standalone plugin. 
 
+### Caching of Rules and Quality Profiles
+
+**Important**: Starting with SonarQube 9.1, rules and quality profiles are cached to improve the startup time (see [SONAR-15237](https://sonarsource.atlassian.net/browse/SONAR-15237)). To apply changes to `Language Key` and `Validator Config class`, the PL/SQL specific plugins must be uninstalled and then reinstalled. Configuration changes are not affected by this process.
+
 ## Compatibiltiy
 
 The current plugins are compatible with all on-premises SonarQube editions (Community, Developer, Enterprise and Data Center).
