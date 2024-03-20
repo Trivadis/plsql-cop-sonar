@@ -148,7 +148,7 @@ The meaning of `License file` and `Validator Config class` is identical to the s
 The current plugins are compatible with all on-premises SonarQube editions (Community, Developer, Enterprise and Data Center).
 
 - Minumum SonarQube version: 7.9
-- Latest SonarQube version tested: 10.3.0
+- Latest SonarQube version tested: 10.4.1
 
 ## Frequently Asked Questions
 
