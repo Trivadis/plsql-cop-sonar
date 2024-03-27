@@ -16,4 +16,4 @@ The preview/trial version of db* CODECOP for SonarQube is licensed under the Cre
 
 The trial/preview version provides full functionality but is limited in time and volume.
 
-For production use a separate software license agreement is required.
+For production use a separate software license agreement is required. Please contact [Roland Stirnimann](mailto:roland.stirnimann@accenture.com) for details.
